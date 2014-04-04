@@ -19,4 +19,24 @@ class ContaCorrenteTest < Test::Unit::TestCase
 		calc = Calculadora.new
 		assert_equal(3,calc.fibonacci(4))
 	end
+
+	def testa_fibonacci_5_eh_5
+		calc = Calculadora.new
+		assert_equal(5,calc.fibonacci(5))
+	end
+
+	def testa_fibonacci_6_eh_8
+		calc = Calculadora.new
+		assert_equal(8,calc.fibonacci(6))
+	end
+
+	def testa_fibonacci_20_eh_8
+		calc = Calculadora.new
+		assert_equal(6765,calc.fibonacci(20))
+	end
+
+	def testa_fibonacci_25_eh_8
+		calc = Calculadora.new
+		assert_equal(75025,calc.fibonacci(25))
+	end
 end
